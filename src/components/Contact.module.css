@@ -1,0 +1,102 @@
+.contactSection {
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.titleUnderline {
+  height: 4px;
+  width: 60px;
+  background: var(--accent-secondary);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.contactContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 24px;
+  padding: 4rem;
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactInfo h3 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #fff, var(--text-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contactInfo p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+  max-width: 600px;
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  gap: 1rem;
+  font-size: 1.2rem;
+  color: #e4e4e7;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--card-border);
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 450px;
+}
+
+.infoItem:hover {
+  background: rgba(139, 92, 246, 0.1);
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(139, 92, 246, 0.2);
+}
+
+.icon {
+  color: var(--accent-color);
+}
+
+@media (max-width: 900px) {
+  .contactContainer {
+    padding: 2.5rem;
+  }
+  .infoItem {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
